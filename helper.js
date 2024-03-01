@@ -23,10 +23,10 @@ function createAudioHTML(path) {
   
   function generateT2A(tableId) {
     let table = document.getElementById(tableId);
-    let ext = ['.txt', '_tgt.wav', '_ns.wav', '_maa2.wav','_ldm.wav', '_tango.wav'];
+    let ext = ['.txt', '_tgt.wav', '_ns.wav', '_cas.wav'];
   
     for (var i = 0; i < 10; i++) {
-      generateExampleRow(table.rows[1 + i], 'data/t2s/' + i, ext, 0);
+      generateExampleRow(table.rows[1 + i], 'data/Model_Performance/' + i, ext, 0);
     }
   }
   
@@ -34,10 +34,10 @@ function createAudioHTML(path) {
   
   function generateVariable(tableId) {
     let table = document.getElementById(tableId);
-    let ext = ['.txt', '_gt.wav', '_hylm.wav','_musicgen.wav', '_musiclm.wav'];
+    let ext = ['.txt', '_gt.wav', '_sub1.wav','sub2.wav', 'sub3.wav'];
   
     for (var i = 0; i < 9; i++) {
-      generateExampleRow(table.rows[1 + i], 'data/t2m/' + i, ext, 0);
+      generateExampleRow(table.rows[1 + i], 'data/Across_Subjects/' + i, ext, 0);
     }
   }
   
