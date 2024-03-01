@@ -23,7 +23,7 @@ function createAudioHTML(path) {
   
   function generateT2A(tableId) {
     let table = document.getElementById(tableId);
-    let ext = ['.txt', '_gt.wav', '_hylm.wav', '_maa2.wav','_ldm.wav', '_tango.wav'];
+    let ext = ['.txt', '_tgt.wav', '_ns.wav', '_maa2.wav','_ldm.wav', '_tango.wav'];
   
     for (var i = 0; i < 10; i++) {
       generateExampleRow(table.rows[1 + i], 'data/t2s/' + i, ext, 0);
