@@ -34,7 +34,7 @@ function createAudioHTML(path) {
   
   function generateVariable(tableId) {
     let table = document.getElementById(tableId);
-    let ext = ['.txt', '_gt.wav', '_sub1.wav','sub2.wav', 'sub3.wav'];
+    let ext = ['.txt', '_tgt.wav', '_sub1.wav','_sub2.wav', '_sub3.wav'];
   
     for (var i = 0; i < 9; i++) {
       generateExampleRow(table.rows[1 + i], 'data/Across_Subjects/' + i, ext, 0);
